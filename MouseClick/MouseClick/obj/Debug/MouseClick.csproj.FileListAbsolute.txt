@@ -1,0 +1,5 @@
+E:\Project\MouseClick\MouseClick\bin\Debug\MouseClick.exe
+E:\Project\MouseClick\MouseClick\bin\Debug\MouseClick.pdb
+E:\Project\MouseClick\MouseClick\obj\Debug\MouseClick.csprojResolveAssemblyReference.cache
+E:\Project\MouseClick\MouseClick\obj\Debug\MouseClick.exe
+E:\Project\MouseClick\MouseClick\obj\Debug\MouseClick.pdb

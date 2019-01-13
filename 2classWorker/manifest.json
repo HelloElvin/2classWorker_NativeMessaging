@@ -1,0 +1,47 @@
+
+{  
+
+  "name": "2classWorker",  
+  "version": "2.1",
+  "manifest_version": 2, 
+  "description": "work in safetree.",  
+  "browser_action": {  
+   "default_icon": "worker.png" ,
+   "default_title": "2classWorker",
+   "default_popup": "popup.html"
+  },
+  "background":{"scripts":["js/background.js","js/userData.js"]},
+  "content_scripts": [{  
+         "matches": ["https://www.2-class.com/"],   
+         "js": ["js/login.js"]  
+    },
+    {
+      "matches": ["https://www.2-class.com/courses"],   
+         "js": ["js/course.js"]  
+    },{
+      "matches": ["https://www.2-class.com/courses/exams/6"],   
+         "js": ["js/fill1.js"]  
+    },
+    {
+      "matches": ["https://www.2-class.com/courses/exams/9"],   
+         "js": ["js/fill2.js"] 
+    },
+    {
+      "matches": ["https://www.2-class.com/courses/exams/26"],   
+         "js": ["js/fill3.js"]  
+    },
+    {
+      "matches": ["https://www.2-class.com/courses/exams/27"],   
+         "js": ["js/fill4.js"]  
+    }
+  ],  
+    "permissions": [ 
+      "nativeMessaging",    
+      "tabs", 
+      "alarms",
+      "file:///*",
+     "http://*/*",
+    "https://*/*"
+    ]    
+ 
+}
